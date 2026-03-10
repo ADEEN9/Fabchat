@@ -1,0 +1,113 @@
+.directory { max-width: 1200px; }
+
+.directory-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  flex: 1;
+  position: relative;
+  min-width: 250px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.search-input {
+  padding-left: 42px;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-icon-label {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.filter-select {
+  min-width: 180px;
+}
+
+/* Employee Grid */
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.employee-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px;
+  transition: all var(--transition-normal);
+}
+
+.employee-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-active);
+}
+
+.emp-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.emp-details {
+  min-width: 0;
+  flex: 1;
+}
+
+.emp-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.emp-designation {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: capitalize;
+}
+
+.emp-id {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-family: monospace;
+  margin-top: 2px;
+}
+
+.emp-meta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.emp-skills {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.emp-chat-btn {
+  width: 100%;
+  margin-top: auto;
+}
